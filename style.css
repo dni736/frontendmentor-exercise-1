@@ -1,0 +1,106 @@
+html, body {
+		height: 100%;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: hsl(204, 43%, 93%);
+		font-family: 'Karla', sans-serif;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.container{
+		margin: 0 auto;
+		background-color: white;
+		max-width: 1120px;
+		min-width: 320px;
+		border-radius: 30px;
+		width: 80%;
+	}
+	.cyan{
+		width: 100%;
+		height: 250px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.dark, .light{
+		width: 50%;
+		height: auto;
+	}
+
+	h2, p{
+		padding: 30px 0 0 30px;
+		margin: 0;
+	}
+	p{
+		font-size: 16px;
+		color: hsl(218, 22%, 67%);
+		padding-bottom: 30px;
+	}
+	.join{
+		color: hsl(179, 62%, 43%);
+	}
+	.month{
+		color: hsl(71, 73%, 54%);
+	}
+	.dark{
+	  background-color: hsl(179, 62%, 43%);
+	  border-radius: 0 0 0 30px;
+	}
+	button{
+		width: 80%;
+		height: 45px;
+		color: white;
+		background-color: hsl(71, 73%, 54%);
+		border-radius: 10px;
+		margin: 20px 0 0 30px;
+		font-size: 10px;
+	}
+	.light{
+	  background-color: #59bebd;
+	  border-radius: 0 0 30px 0;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+	.light p{
+		color: white;
+		padding: 0;
+	}
+	.dark p{
+		color: white;
+		padding: 10px 0 0 30px;
+	}
+	.dark > h2{
+		color: white;
+	}
+
+	.why-us p{
+		font-size: 15px;
+		margin:5px;
+	}
+
+	@media only screen and (max-width: 600px) {
+  		.cyan {
+    		flex-direction: column;
+  		}
+  		.container{
+  			width: 40%;
+  		}
+  		.dark, .light{
+			width: 100%;
+			height: auto;
+		}
+		.dark{
+			border-radius: 0;
+		}
+		.light{
+			border-radius: 0 0 30px 30px;
+		}
+		button{
+			margin-bottom: 10px;
+		}
+	}
